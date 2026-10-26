@@ -1,0 +1,6 @@
+# Shared Lives - 액션바 갱신 (1초마다, 사망/변경 직후 즉시)
+scoreboard players set #timer sl_data 0
+execute if score #actionbar sl_data matches 1 if score #gameover sl_data matches 1 run title @a actionbar [{text:"GAME OVER",color:"dark_red",bold:true},{text:" - 공유 목숨 0 / ",color:"gray"},{score:{name:"#max_lives",objective:"sl_data"},color:"gray"}]
+execute if score #actionbar sl_data matches 1 if score #gameover sl_data matches 0 if score #lives sl_data matches 3.. run title @a actionbar [{text:"❤ 공유 목숨 ",color:"gold"},{score:{name:"#lives",objective:"sl_data"},color:"green",bold:true},{text:" / ",color:"gray"},{score:{name:"#max_lives",objective:"sl_data"},color:"gray"}]
+execute if score #actionbar sl_data matches 1 if score #gameover sl_data matches 0 if score #lives sl_data matches 2 run title @a actionbar [{text:"❤ 공유 목숨 ",color:"gold"},{score:{name:"#lives",objective:"sl_data"},color:"yellow",bold:true},{text:" / ",color:"gray"},{score:{name:"#max_lives",objective:"sl_data"},color:"gray"}]
+execute if score #actionbar sl_data matches 1 if score #gameover sl_data matches 0 if score #lives sl_data matches ..1 run title @a actionbar [{text:"❤ 공유 목숨 ",color:"gold"},{score:{name:"#lives",objective:"sl_data"},color:"red",bold:true},{text:" / ",color:"gray"},{score:{name:"#max_lives",objective:"sl_data"},color:"gray"}]

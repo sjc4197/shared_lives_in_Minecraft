@@ -1,0 +1,8 @@
+# 배포용 ZIP은 GitHub Releases에 첨부 (저장소에는 커밋하지 않음)
+*.zip
+
+# 테스트 서버 / OS 잡동사니
+world/
+logs/
+.DS_Store
+Thumbs.db

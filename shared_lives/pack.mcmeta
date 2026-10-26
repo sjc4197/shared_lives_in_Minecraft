@@ -1,0 +1,10 @@
+{
+  "pack": {
+    "description": "Shared Lives - 모든 플레이어가 하나의 목숨을 공유합니다 (Minecraft Java 26.3)",
+    "min_format": [
+      121,
+      0
+    ],
+    "max_format": 121
+  }
+}
